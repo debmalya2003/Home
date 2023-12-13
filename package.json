@@ -1,0 +1,56 @@
+{
+  "homepage": "https://debmalya2003.github.io/Home",
+  "name": "portfolio-project-2022",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.2",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "gh-pages": "^6.1.0",
+    "nodemailer": "^6.9.7",
+    "rc-progress": "^3.2.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-simple-animate": "^3.3.12",
+    "react-tsparticles": "^2.0.6",
+    "react-vertical-timeline-component": "^3.5.2",
+    "sass": "^1.50.1",
+    "tsparticles": "^2.0.6",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

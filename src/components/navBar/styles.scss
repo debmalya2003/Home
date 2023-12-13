@@ -1,0 +1,96 @@
+.navbar {
+    background-color: var(--yellow-theme-nav-background-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    z-index: 1000; /* Add a higher z-index to ensure the navbar is above other elements */
+  
+    &__container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: inherit;
+      padding: 0px 20px;
+      flex: 1;
+  
+      &__logo {
+        color: var(--yellow-theme-main-color);
+        cursor: pointer;
+      }
+  
+      &__menu {
+        display: flex;
+        list-style: none;
+        text-align: center;
+  
+        &__item {
+          line-height: 40px;
+          margin-right: 1.5rem;
+          font-size: 1.6rem;
+  
+          &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 0;
+            background: transparent;
+            transition: all 0.5s ease;
+          }
+  
+          &:hover::after {
+            width: 100%;
+            background: var(--yellow-theme-main-color);
+          }
+  
+          &__links {
+            color: var(--yellow-theme-main-color);
+            text-decoration: none;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+  
+  .nav-icon {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar__container__menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 999; /* Ensure a higher z-index for the mobile menu */
+  
+      &.active {
+        background: rgba(0, 0, 0, 0.9); /* Set the background color to complete dark */
+        left: 0px;
+        opacity: 1;
+      }
+  
+      &__item {
+        border-bottom: 1px solid #282828;
+        margin: 0px;
+        padding: 20px 0px;
+      }
+    }
+  
+    .nav-icon {
+      display: block;
+      cursor: pointer;
+      color: var(--yellow-theme-main-color);
+      padding-right: 20px;
+      z-index: 1001; /* Ensure a higher z-index for the mobile menu icon */
+    }
+  }
+  
